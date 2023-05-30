@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linkis</title>
+    <style>
+        body{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        a {
+            color: brown;
+        }
+        a:visited{
+            color: darkred;
+           text-decoration: none;
+        }
+        a:hover {
+            color: rgb(0, 217, 255);
+            text-decoration: underline;
+        } 
+        a:active{
+            color: chartreuse;
+        }
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>personalisando links</h1>
+        <ul>
+           <li><a href="https://www.youtube.com/channel/UC3CkISqjhOQUzbdwbDISkFg" target="_blank"rel="externo">Youtube</a></li>
+           <li><a href="https://www.facebook.com/profile.php?id=100089591708190" target="_blank"rel="externo">facebook</a></li>
+           <li><a href="https://github.com/gustavoguanabara/html-css" target="_blank"rel="externo">githabe</a></li>
+        </ul>
+</body>
+</html>
