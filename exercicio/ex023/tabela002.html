@@ -14,6 +14,19 @@
             width: 500px;
             border-collapse: collapse;
         }
+
+        caption{
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: rgba(180, 178, 178, 0.726);
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: rgba(196, 192, 192, 0.37);
+        }
+
         td, th {
             border: 1px solid black;
             padding: 10px;
@@ -31,10 +44,11 @@
 <body>
     <h1>uso de tabelas grandes</h1>
     <table>
+        <caption>Populaçao das unidades federativas </caption>
         <thead>
             <tr>
-                <th>federativa</th>
-                <th>populaçao</th>
+                <th scope="col">federativa</th>
+                <th scope="col" style="width: 100px;">populaçao</th>
             </tr>
         </thead>
         <tbody>
@@ -148,7 +162,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total de abitantes </th>
+                <th scope="row">total de abitantes </th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
